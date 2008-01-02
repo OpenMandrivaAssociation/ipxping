@@ -8,6 +8,7 @@ URL:		ftp://ftp.metalab.unc.edu/pub/Linux/system/Network/
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/Network/%{name}-%{version}.tar.gz
 Patch0:		ipxping-kernel-2.2.patch
 Requires:	ipxutils
+BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This is Linux version of IPXPING wich was originally written for SUN machine
