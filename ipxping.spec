@@ -1,14 +1,14 @@
 Summary:	The ipxping utility
 Name:		ipxping
 Version:	0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	Public Domain
 Group:		Networking/Other
 URL:		ftp://ftp.metalab.unc.edu/pub/Linux/system/Network/
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/Network/%{name}-%{version}.tar.gz
 Patch0:		ipxping-kernel-2.2.patch
 Requires:	ipxutils
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is Linux version of IPXPING wich was originally written for SUN machine
@@ -17,8 +17,8 @@ and Justin Hoon <hoonju@kai.ee.cit.ac.nz>.
 
 %prep
 
-%setup -n %{name}
-%patch
+%setup -q -n %{name}
+%patch0 -p0
 
 %build
 gcc %{optflags} -o ipxping ipxping-linux.c
