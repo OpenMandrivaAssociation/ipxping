@@ -1,7 +1,7 @@
 Summary:	The ipxping utility
 Name:		ipxping
 Version:	0.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	Public Domain
 Group:		Networking/Other
 URL:		ftp://ftp.metalab.unc.edu/pub/Linux/system/Network/
