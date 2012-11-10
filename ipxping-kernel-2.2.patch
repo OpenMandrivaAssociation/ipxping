@@ -1,0 +1,11 @@
+--- ./ipxping-linux.c.orig	Thu May 13 00:08:48 1999
++++ ./ipxping-linux.c	Thu May 13 00:09:31 1999
+@@ -24,7 +24,7 @@
+ #include <sys/time.h>
+ #include <sys/timeb.h>
+ #include <sys/socket.h>		/* for sockaddr */
+-#include <linux/ipx.h>
++#include <netipx/ipx.h>
+ 
+ /* the Sigfunc signal is lifted straigh from                */
+ /* Richard Stevens' Advance Programming in Unix Environment */
